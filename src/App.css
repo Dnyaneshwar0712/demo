@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.react-logo, .vite-logo {
+  height: 30px;
+  margin-right: 0.5rem;
+}
+
+.main-nav {
+  display: flex;
+  flex-grow: 1;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem;
+}
+
+.nav-link.active {
+  color: #555;
+}
+
+.nav-icon {
+  margin-right: 0.25rem;
+}
+
+.user-profile {
+  margin-left: auto;
+}
+
+.profile-image {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.app-content {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.app-footer {
+  font-size: 0.8rem;
+  color: #888;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+.todo-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.todo-form {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.todo-input {
+  flex-grow: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 1rem;
+}
+
+.create-button {
+  background-color: #0d99ff;
+  color: white;
+  border: none;
+  padding: 0 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.create-button:hover {
+  background-color: #0084e0;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.todo-item.completed {
+  background-color: #f9f9f9;
+}
+
+.todo-checkbox-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 0.75rem;
+}
+
+.todo-checkbox {
+  width: 22px;
+  height: 22px;
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.todo-checkbox.completed {
+  background-color: #0d99ff;
+  border-color: #0d99ff;
+}
+
+.todo-text {
+  flex-grow: 1;
+  font-size: 1rem;
+}
+
+.todo-item.completed .todo-text {
+  color: #888;
+  text-decoration: line-through;
+}
+
+.todo-options {
+  background: none;
+  border: none;
+  color: #999;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0 0.5rem;
+}
+
+.todo-options:hover {
+  color: #333;
+}
+.home-container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.home-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.home-container p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.start-button {
+  display: inline-block;
+  background-color: #0d99ff;
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.start-button:hover {
+  background-color: #0084e0;
+}
